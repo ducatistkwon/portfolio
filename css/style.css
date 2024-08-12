@@ -17,12 +17,13 @@ body {
 	/* font-family: "Open Sans", sans-serif;
 	-webkit-font-smoothing: antialiased; */
 	font-smoothing: antialiased;
-	/* background-color: #000; */
-	background-image: url(../img/bg6.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
+	/* background-color: rgb(0, 101, 253); */
+	background: url(../img/bg11.jpg) no-repeat center fixed;
 	background-size: cover;
-	/* background: url(../img/bg.jpg) no-repeat center 0; */
+}
+
+.page-section{
+	background-color: transparent;
 }
 
 h1,
@@ -399,7 +400,7 @@ Commom elements
 	/* font-family: "Playfair Display", serif; */
 	font-family: 'SUITE', sans-serif;
 	line-height: 1;
-	font-weight: 900;
+	font-weight: 700;
 	position: relative;
 }
 
@@ -651,6 +652,7 @@ body.push-side #ascrail2000-hr {
 
 .about-info {
 	margin-bottom: 50px;
+	position: relative;
 }
 
 .about-info h2 {
@@ -693,10 +695,12 @@ body.push-side #ascrail2000-hr {
 	color: rgba(130, 130, 130, 0.29);
 	position: fixed;
 	height: 80px;
-	width: 650px;
+	width: 614px;
 	left: 0;
 	bottom: 0;
-	background: rgb(17, 17, 17);
+	/* background: rgb(17, 17, 17); */
+	backdrop-filter: blur(5px);
+	/* background: rgb(0, 101, 253, 0.5); */
 	padding-left: 145px;
 	padding-top: 20px;
 }
@@ -736,7 +740,8 @@ Hero section
 	bottom: 0;
 	width: 221px;
 	padding: 32px 0 10px 35px;
-	background: #111;
+	/* background: #111; */
+	backdrop-filter: blur(10px);
 	z-index: 1;
 }
 
@@ -1388,6 +1393,7 @@ Responsive
 .brand-btn ul li a:hover{
 	border-radius:42px;
 	background:rgba(255, 255, 255, 0.3);
+	/* backdrop-filter: blur(10px); */
 }
 
 /* popup */
@@ -1482,4 +1488,28 @@ ul, ol{
 
 .ico2{
 	max-width: 14%;
+}
+
+.namebox{
+	width: 205px;
+	height: 10px;
+	background-color: #4f525e;
+	position: absolute;
+	top: 65px;
+	left: 0;
+	z-index: -5;
+}
+
+.self{
+	position: relative;
+}
+
+.namebox2{
+	width: 267px;
+	height: 10px;
+	background-color: #586061;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	z-index: -5;
 }
