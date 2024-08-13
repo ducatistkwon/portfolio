@@ -497,7 +497,8 @@ body.push-side #ascrail2000-hr {
 	height: 100%;
 	left: -620px;
 	top: 0;
-	background: rgb(36, 36, 36, 0.62);
+	/* background: rgb(36, 36, 36, 0.62); */
+	backdrop-filter: blur(5px);
 	overflow-y: auto;
 	z-index: 9999;
 	-webkit-transition: all 0.4s;
@@ -682,12 +683,12 @@ body.push-side #ascrail2000-hr {
 
 .contact-info li {
 	font-size: 14px;
-	color: #aaaaaa;
+	color: #fff;
 	margin-bottom: 5px;
 }
 
 .contact-info li a {
-	color: #aaa;
+	color: #fff;
 }
 
 .copyright {
@@ -711,7 +712,8 @@ body.push-side #ascrail2000-hr {
 }
 
 .copyright i {
-	color: rgb(238, 255, 0);
+	/* color: rgb(238, 255, 0); */
+	color: #42c7df;
 }
 
 /*------------------
@@ -1370,7 +1372,7 @@ Responsive
 	left:0;
 	width:100%;
 	height:100%;
-	background:rgba(0, 0, 0, 0.7);
+	background:rgba(0, 0, 0, 0.47);
 }
 .brand-btn ul{
 	position:absolute;
@@ -1425,6 +1427,10 @@ Responsive
 
 .color_sky{
 	color: #42c7df;
+}
+.color_sky2{
+	color: #42c7df;
+	font-weight: bold;
 }
 
 .edu, .cer, .career, .activities{
@@ -1483,17 +1489,17 @@ ul, ol{
 }
 
 .ico{
-	max-width: 5%;
+	max-width: 7%;
 }
 
 .ico2{
-	max-width: 14%;
+	max-width: 7%;
 }
 
 .namebox{
 	width: 205px;
 	height: 10px;
-	background-color: #4f525e;
+	background-color: #5f5f5f;
 	position: absolute;
 	top: 65px;
 	left: 0;
@@ -1507,9 +1513,67 @@ ul, ol{
 .namebox2{
 	width: 267px;
 	height: 10px;
-	background-color: #586061;
+	background-color: #5f5f5f;
 	position: absolute;
 	top: 30px;
 	left: 0;
 	z-index: -5;
+}
+
+.faicon{
+	width: 125px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.faicon > a{
+	color: lightgrey;
+}
+
+.faicon a>i:hover{
+	color: #42c7df;
+}
+
+/* hover 텍스트 변경(index) */
+.hidden-hover::before{
+	content: "BX & BI Guide";
+}
+.hidden-hover2::before{
+	content: "Web Guide";
+}
+.hidden-hover3::before{
+	content: "Web Site";
+}
+.hidden-hover4::before{
+	content: "E-Book";
+}
+.hidden-hover5::before{
+	content: "Poster";
+}
+.hidden-hover6::before{
+	content: "Banner";
+}
+.hidden-hover7::before{
+	content: "상세페이지";
+}
+.hidden-hover:hover{
+	animation-play-state: paused;
+}
+.hidden-hover:hover::before,
+.hidden-hover2:hover::before,
+.hidden-hover3:hover::before,
+.hidden-hover4:hover::before,
+.hidden-hover5:hover::before,
+.hidden-hover6:hover::before,
+.hidden-hover7:hover::before{
+	content: "보러가기";
+}
+/* hover 텍스트 변경(index)_E */
+
+.aboutme-img{
+	width: 22%;
+}
+
+.brand_banner{
+	width: 40%;
 }
