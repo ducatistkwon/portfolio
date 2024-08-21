@@ -1533,3 +1533,22 @@ ul, ol{
 .faicon a>i:hover{
 	color: #42c7df;
 }
+
+/* test */
+.container{
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-bottom: 50px;
+}
+.text{
+	font-weight: 100;
+	font-size: 22px;
+	color: #FAFAFA;
+}
+
+.dud{
+  color: #757575;
+}
