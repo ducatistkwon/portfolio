@@ -1536,7 +1536,7 @@ ul, ol{
 
 /* test */
 .container{
-  height: 150px;
+  height: 90px;
   width: 300px;
   justify-content: center;
   align-items: center;
